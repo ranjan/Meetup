@@ -1,0 +1,78 @@
+
+
+$grouprad: 4px;
+// $groupmarg: 12px; //in layout
+$bordercolor: $light-gray;
+$grouppad: 16px;
+
+// USE FIRST OF AND LAST OF HERE
+
+.groupleft-holder {
+  // margin: 16px;
+  // display: inline-block;
+  margin-right: $groupmarg;
+  border-bottom: 1px solid $gray;
+  margin-bottom: auto;
+}
+
+.groupmiddle-holder {
+  // margin: 16px;
+  width: 75%;
+  margin-bottom: auto;
+}
+
+
+.groupright-holder {
+  // margin: 16px;
+  // display: inline-block;
+  border-bottom: 1px solid $gray;
+  margin-bottom: auto;
+  width: 25%;
+}
+
+
+.group-botmarg {
+  margin-bottom: $groupmarg;
+  border-bottom: 1px solid $gray;
+}
+
+
+.groupshow {
+  // padding: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $grouppad;
+  padding-top: 0px;
+  width: $pagewidth;
+}
+
+.spacebet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padded {
+  padding: $grouppad;
+  border: 1px solid $bordercolor;
+}
+
+.groupleft {
+  // margin: 16px;
+  width: 166px;
+  @extend .padded;
+}
+
+.grouplinklist {
+  a {
+    padding-right: 10px;
+    display: inline-block;
+  }
+}
+
+.groupcreatebg {
+  background-color: $color5;
+  display: flex;
+  min-height: 600px;
+}

@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: events
+#
+#  id          :integer          not null, primary key
+#  group_id    :integer          not null
+#  title       :string           not null
+#  start_time  :datetime         not null
+#  description :text             not null
+#  location    :string           not null
+#  address     :string           not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group_id: 1
+  title: MyString
+  start_time: 2017-03-23 06:55:26
+  description: MyText
+  location: MyString
+  address: MyString
+
+two:
+  group_id: 1
+  title: MyString
+  start_time: 2017-03-23 06:55:26
+  description: MyText
+  location: MyString
+  address: MyString

@@ -1,0 +1,118 @@
+form {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid $gray;
+}
+
+
+$formpad: 7px;
+label {
+  margin-top: $formpad;
+}
+
+input, textarea {
+  padding: $formpad;
+  margin-bottom: $formpad;
+  border: 1px solid $gray;
+}
+
+form ul {
+  display: block;
+  margin: $formpad 0;
+}
+
+// want it 340 down from the top and centered
+
+.userholder {
+  position: absolute;
+  top: 340px;
+}
+
+.userform-modal {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  label, input {
+    display: block;
+  }
+  button, a {
+    margin-top: 10px;
+  }
+  h2 {
+    color: $color1;
+  }
+}
+
+.userform-inline {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: auto;
+  width: 300px;
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+  button, a {
+    margin-top: 10px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 42px;
+    color: $color1;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+form div label {
+  background-color: $lightest-gray;
+}
+
+// blue too dark: AED5FD
+// blue too light: EAF4FF
+.checkedlabel {
+  background-color: #CCE5FE;
+}
+
+.creategroup {
+  @extend .userform-modal;
+  border: 1px solid $light-gray;
+  border-top: 0;
+  width: 808px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  textarea {
+    display: block;
+  }
+  div {
+    width: 592px;
+    label {
+      @extend .noselect;
+      display: inline-flex;
+      padding: 5px;
+      margin-top: 10px;
+      margin-right: 10px;
+      border: 1px solid $lightest-gray;
+      &:hover {
+        cursor: pointer;
+      }
+      input {
+        margin-left: 5px;
+        margin-bottom: auto;
+        margin-top: auto;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

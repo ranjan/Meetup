@@ -1,0 +1,164 @@
+ html {
+	position: relative;
+	height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+	margin: 0 auto;
+	font-family: $sans-serif;
+	font-size: 14px;
+  color: black;
+}
+
+a {
+  text-decoration: underline;
+  color: #1f24cc;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.white {
+  background-color: white;
+}
+
+.fullwide {
+  width: 100%;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+.ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// banner title
+h1 {
+  font-size: 56px;
+}
+
+// banner desc
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.right {
+  position: absolute;
+  display:inline-block;
+  right: 0;
+}
+
+.left {
+  position: absolute;
+  display:inline-block;
+  left: 0;
+}
+
+.rfloat {
+  float:right;
+}
+
+.lfloat {
+  float:left;
+}
+
+.rmargin {
+  margin-right: 10px;
+}
+
+.botmarg {
+  margin-bottom: 10px;
+}
+
+.inside_divbmargin > div {
+  margin-bottom: 10px;
+}
+
+.margined {
+  margin: 8px;
+}
+
+.bmargined {
+  margin: 8px;
+  margin-bottom: 35px;
+}
+
+.tmargin {
+  margin-top: 10px;
+}
+
+.lmargin {
+  margin-left: 10px;
+}
+
+.noline {
+  text-decoration: none;
+}
+
+.fontwhite {
+  color: white;
+}
+
+.fontblack {
+  color: black;
+}
+
+.inlineimg {
+  display: inline-block;
+}
+
+$groupmarg: 12px;
+.centeredpadded {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  padding: $groupmarg;
+}
+
+.widest {
+  max-width: 1266px;
+}
+
+.error {
+  color: red;
+}
+
+.bot_lineautomarg {
+  border-bottom: 1px solid $gray;
+  margin-bottom: auto;
+}
+
+.bg-group-page {
+  background-color: $color5;
+}
+
+.shadow_white {
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0,0,0,1);
+}

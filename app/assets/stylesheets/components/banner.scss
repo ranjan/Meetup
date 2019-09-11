@@ -1,0 +1,82 @@
+.border-tb {
+  border-bottom: 2px solid $light-gray;
+}
+
+.hbotmargins {
+  margin-bottom: 10px;
+}
+
+$pagewidth: 950px;
+
+.hcenter {
+  // padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  width: $pagewidth;
+}
+
+.groupbanner {
+  height: 128px;
+  background-color: $color2;
+  border-radius: 4px 4px 0 0;
+  div {
+    color: white;
+  }
+  h1 {
+    font-size: 33px;
+  }
+  border-bottom: 8px solid $color2-hi;
+}
+
+.groupnavholder {
+  height:36px;
+  padding: 6px;
+  background-color: white;
+  border: 1px solid $light-gray;
+  border-bottom: 1px solid $gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.loginbanner {
+  height: 170px;
+  background-color: $color1;
+  @extend .border-tb;
+  h1, h2, h3, h4 {
+    @extend .hbotmargins;
+  }
+  div {
+    color: white;
+  }
+}
+
+.bigbanner {
+  height: 462px;
+  background-color: black;
+  @extend .border-tb;
+  h1, h2, h3, h4 {
+    @extend .hbotmargins;
+  }
+}
+
+.ctrbannertxt {
+  color: white;
+  text-align: center;
+  a.button.signup {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.topictxtholder {
+  color: white;
+  padding-top: 32px;
+  width: 958px;
+  margin-left: auto;
+  margin-right: auto;
+  h2 {
+    width: 50%;
+  }
+}

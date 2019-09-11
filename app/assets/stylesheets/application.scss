@@ -1,0 +1,39 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+ // CSS Reset
+@import "base/reset.scss";
+
+ // Core
+@import "base/colors_fonts.scss";
+@import "base/layout.scss";
+
+
+// specifics
+@import "components/buttons.scss";
+@import "components/header.scss";
+@import "components/forms.scss";
+@import "components/banner.scss";
+@import "components/group.scss";
+@import "components/footer.scss";
+@import "components/usershow.scss";
+@import "components/root.scss";
+@import "components/square.scss";
+@import "components/search.scss";
+@import "components/eventshow.scss";
+@import "components/calendar.scss";
+
+ // applied styles
+// @import "base/application.scss";

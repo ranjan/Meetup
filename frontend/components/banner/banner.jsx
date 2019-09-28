@@ -52,7 +52,7 @@ class Banner extends React.Component {
           backgroundSize: 'cover'
         }}>
         <div className='ctrbannertxt'>
-          <h1>Where will Wiigo today?</h1>
+          <h1>Where will meet today?</h1>
           <h2>Do more of what you love</h2>
           <Link onClick={() => document.getElementById("openModal").click()}
             className='button signup'>Sign Up</Link>

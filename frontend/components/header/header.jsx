@@ -77,7 +77,7 @@ class Header extends React.Component {
       <header>
         {left}
         <span onClick={() => hashHistory.push("/")} className='logo'>
-          Wiigo
+          Meetup
         </span>
         {right}
       </header>

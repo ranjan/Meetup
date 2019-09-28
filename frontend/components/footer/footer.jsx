@@ -16,11 +16,9 @@ const Header = (props) => {
       <section>
         {userNav}
         <nav>
-          <a href='https://github.com/spacether/wiigo'>Github</a>
-          <a href='https://spacether.github.io/'>Portfolio</a>
-          <a href='https://www.linkedin.com/in/justin-a-black/'>
-            LinkedIn
-          </a>
+          <a href='#'>Contact us</a>  |&nbsp;&nbsp;  
+          <a href='#'>Terms of Services</a>  |&nbsp;&nbsp;
+          <a href='#'>Privacy Policy</a>
         </nav>
       </section>
     </footer>

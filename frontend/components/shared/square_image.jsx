@@ -18,9 +18,9 @@ export default ({item, className, path, size, name=false}) => {
     imgStyle = 'imgholder';
   }
   let imgPath = imagePrefix + item.imageUrl;
-  let img = (<img src={imgPath}></img>);
+  let img = (<img src={imgPath} width="128" height="128"></img>);
   if (size) {
-    imgPath = imagePrefix + `c_fill,h_${size[1]},w_${size[0]}/` + item.imageUrl;
+    imgPath = imagePrefix + item.imageUrl;
     img = (<img src={imgPath} width={size[0]} height={size[1]} ></img>);
   }
   if (!name) {

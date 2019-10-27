@@ -2,29 +2,29 @@
 User.destroy_all
 
 boy = [
-  "v1490361262/m10_ax7t8o.jpg",
-  "v1490361261/m9_woo1s8.jpg",
-  "v1490361261/m8_y5lfbs.jpg",
-  "v1490361261/m7_pjpc7c.jpg",
-  "v1490361261/m6_jymqjg.jpg",
-  "v1490361261/m5_qpfqu6.jpg",
-  "v1490361261/m4_f86zgn.jpg",
-  "v1490361261/m3_lt5zqs.jpg",
-  "v1490361261/m2_hthpw0.jpg",
-  "v1490361261/m1_bjmeti.jpg"
+  "profiles/justin.jpg",
+  "profiles/m9_woo1s8.jpg",
+  "profiles/m8_y5lfbs.jpg",
+  "profiles/m7_pjpc7c.jpg",
+  "profiles/m6_jymqjg.jpg",
+  "profiles/m5_qpfqu6.jpg",
+  "profiles/m4_f86zgn.jpg",
+  "profiles/m3_lt5zqs.jpg",
+  "profiles/m2_hthpw0.jpg",
+  "profiles/m1_bjmeti.jpg"
 ]
 
 girl = [
-  "v1490361261/f10_uqe33e.jpg",
-  "v1490361261/f9_uifur4.jpg",
-  "v1490361260/f8_q7n0rk.jpg",
-  "v1490361261/f7_kme82j.jpg",
-  "v1490361261/f6_ucft0i.jpg",
-  "v1490361260/f5_jsiscf.jpg",
-  "v1490361260/f4_aihjdt.jpg",
-  "v1490361260/f3_ilikmf.jpg",
-  "v1490361260/f2_xzqvjz.jpg",
-  "v1490361260/f1_mefyqb.jpg"
+  "profiles/f10_uqe33e.jpg",
+  "profiles/f9_uifur4.jpg",
+  "profiles/f8_q7n0rk.jpg",
+  "profiles/f7_kme82j.jpg",
+  "profiles/f6_ucft0i.jpg",
+  "profiles/f5_jsiscf.jpg",
+  "profiles/f4_aihjdt.jpg",
+  "profiles/f3_ilikmf.jpg",
+  "profiles/f2_xzqvjz.jpg",
+  "profiles/f1_mefyqb.jpg"
 ]
 
 ulist = [
@@ -64,7 +64,7 @@ ulist.each do |arr|
   users << User.create!(user_hash)
 end
 
-default_banner = 'v1490140132/banner1_croped_darkened_gavqfh.jpg'
+default_banner = 'topics/banners/banner1_croped_darkened_gavqfh.jpg'
 Topic.destroy_all
 topic_fields = ['title', 'dash_topic', 'description', 'image_url', 'banner_url']
 tlist = [
@@ -74,63 +74,63 @@ tlist = [
   ],
 
   ['Learning', 'learning', 'Learn about and participate in the next big developments in science, education, and technology!',
-    'c_fill,g_center,h_190,w_300/v1490154826/science_hands_luvosm.jpg',
-    'v1493097314/learning_qyujib.jpg'
+    'topics/images/science_hands_luvosm.jpg',
+    'topics/banners/learning_qyujib.jpg'
   ],
 
   ['Arts', 'arts', 'Paint a picture, see a show, attend a poetry slam, explore the local arts.',
-    'c_fill,h_190,w_300/v1490154493/art_messyhands_e1lsil.jpg',
-    'v1493098439/art_nhzq90.jpg'
+    'topics/images/art_messyhands_e1lsil.jpg',
+    'topics/banners/art_nhzq90.jpg'
   ],
 
   ['Music', 'music', 'See a show, hear a band, make your next band or find your next favorite song.',
-    'c_fill,g_south,h_190,w_300/v1490155137/music_guitarlady_yutxtj.jpg',
-    'v1493099095/music_u4krik.jpg'
+    'topics/images/music_guitarlady_yutxtj.jpg',
+    'topics/banners/music_u4krik.jpg'
   ],
 
   ['Sports', 'sports-adventure', 'Check out local sports and activities near you!',
-    'c_fill,g_north,h_190,w_300/v1490149915/football_skzsqh.jpg',
-    'v1493099625/sports_mdd2wd.jpg'
+    'topics/images/football_skzsqh.jpg',
+    'topics/banners/sports_mdd2wd.jpg'
   ],
 
   ['Outdoors', 'outdoors', 'Check out the local hiking, and avdentures near you!',
-    'c_fill,g_north,h_190,w_300/v1490151395/hike_red_kcs6kk.jpg',
-    'v1493100333/outdoors_sqlqhy.jpg'
+    'topics/images/hike_red_kcs6kk.jpg',
+    'topics/banners/outdoors_sqlqhy.jpg'
   ],
 
   ['Programming', 'tech', 'Lean a new progrgramming language, architecture, or application!',
-    'c_fill,g_south,h_190,w_300/v1490151703/programming_y9iicm.jpg',
-    'v1493100598/programming_unco7u.jpg'
+    'topics/images/programming_y9iicm.jpg',
+    'topics/banners/programming_unco7u.jpg'
   ],
 
   ['Language', 'language', 'Experience the world through written or spoken word. Learn a language, start a book club.',
-    'c_fill,g_north,h_190,w_300/v1490153395/talk_picnic_vzzj6q.jpg',
-    'v1493268604/language_brn1tx.jpg'
+    'topics/images/talk_picnic_vzzj6q.jpg',
+    'topics/banners/language_brn1tx.jpg'
   ],
 
   ['Business & Career', 'business', 'Hear exciting lectures on business developments. Network with professionals in your industry.',
-    'c_fill,g_north,h_190,w_300/v1490153773/business_xtbcwr.jpg',
-    'v1493271090/business_lhvgq5.jpg'
+    'topics/images/business_xtbcwr.jpg',
+    'topics/banners/business_lhvgq5.jpg'
   ],
 
   ['Games', 'games', "Lets play games. Be it board, card, computer, console, word, we're up for it. Let's play.",
-    'c_fill,g_west,h_190,w_300/v1490157507/game_risk_p5k6xa.jpg',
-    'v1493271799/games_r159hv.jpg'
+    'topics/images/game_risk_p5k6xa.jpg',
+    'topics/banners/games_r159hv.jpg'
   ],
 
   ['Culture', 'culture', 'Check out local fairs and festivals and learn more about our neighbors near and far',
-    'c_fill,g_north,h_190,w_300/v1490158522/culture_diwali_zbqubj.jpg',
-    'v1493272300/culture_v0xi2n.jpg'
+    'topics/images/culture_diwali_zbqubj.jpg',
+    'topics/banners/culture_v0xi2n.jpg'
   ],
 
   ['Film', 'film', "Let's explore the world of cinema. Come see a classic, a new indie film, or the latest Oscar winner.",
-    'c_fill,g_south,h_190,w_300/v1490160778/film_clapper_tiob9v.jpg',
-    'v1493272843/film_bvzhaq.jpg'
+    'topics/images/film_clapper_tiob9v.jpg',
+    'topics/banners/film_bvzhaq.jpg'
   ],
 
   ['Dance', 'dance', 'Get out there and move it! Be it voguing, ballroom, zumba, or hip-hop, we have adance for you',
-    'c_fill,g_north,h_190,w_300/v1490160223/dancing_salsa_j8t9lo.jpg',
-    'v1493273301/dance_n838jw.jpg'
+    'topics/images/dancing_salsa_j8t9lo.jpg',
+    'topics/banners/dance_n838jw.jpg'
   ],
 ]
 
@@ -151,8 +151,8 @@ end
 
 
 Group.destroy_all
-group_images = ['v1490209770/group_default_w5eg53.jpg',
-  'v1490242827/group_def2_diks8y.jpg']
+group_images = ['groups/group_default_w5eg53.jpg',
+  'groups/group_def2_diks8y.jpg']
 
 group_hometown = "San Francisco, CA"
 group_fields = ['name', 'description', 'topic_ids', 'image_url', 'hometown', 'organizer_id']
@@ -166,7 +166,7 @@ We are open to biotech professionals,
 scientists, and citizen scientists of all stripes. Come be part of our
 community of hackers, creative thinkers, and mad scientists!",
 get_topics('learning', topics),
-'v1493310944/citizen_science_pctdux.jpg'
+'groups/citizen_science_pctdux.jpg'
 ]
 
 glist << [
@@ -177,7 +177,7 @@ human diseases and extracting insights from huge data sets. We build
 tools, extract data in real time, and are developing a better understanding
 of our worls. COme level up you data science skills with us!",
 get_topics('learning', topics),
-'v1493311829/sf_data_science_cimpr2.jpg'
+'groups/sf_data_science_cimpr2.jpg'
 ]
 
 glist << [
@@ -193,7 +193,7 @@ first 3D CAD/CAM tool of its kind; connecting your entire product
 development process in a single cloud-based platform that works on
 both Mac and PC.",
 get_topics('learning', topics),
-'v1493312138/future_of_hw_kkbxmt.jpg'
+'groups/future_of_hw_kkbxmt.jpg'
 ]
 
 glist << [
@@ -203,7 +203,7 @@ who meet once a month for figure sketching. The people we sketch range
 20s to 90s. If you want to bring your sketching to the next level, or
 just need some more creativity in your life, give us a try.",
 get_topics('arts', topics),
-"v1493686890/figure_sketching_lc0f8i.jpg"
+"groups/figure_sketching_lc0f8i.jpg"
 ]
 
 glist << [
@@ -214,7 +214,7 @@ to attend a film festival with? This is the group for you!
 This group is for film, literature, music, arts and culture enthusiasts
 in the SF Bay Area.",
 get_topics('arts', topics),
-"v1493687169/arts_culture_mqqxpf.jpg"
+"groups/arts_culture_mqqxpf.jpg"
 ]
 
 glist << [
@@ -239,7 +239,7 @@ combine art with technology.
 Inspiring individuals, entrepreneurs, innovators, startups and
 companies by injecting creativity into their lives and organizations.",
 get_topics('arts', topics),
-"v1493687674/art_tech_wyg3dl.jpg"
+"groups/art_tech_wyg3dl.jpg"
 ]
 
 glist << [
@@ -254,7 +254,7 @@ drink.draw.sf
 Feel free to DM the account to post drawings from group or whatever
 you're feeling that day.",
 get_topics('arts', topics),
-"v1493687970/drink_draw_cy9pqj.png"
+"groups/drink_draw_cy9pqj.png"
 ]
 
 glist << [
@@ -264,14 +264,14 @@ drink and check out a new local band. Lately we have been going to a
 lot of SoFar sounds events, but we go to concerts, festivals, garage
 bands, and raves too. If it's good we're in! Come join us!",
 get_topics('music', topics),
-"v1493836658/popup_music_vfpsb3.jpg"
+"groups/popup_music_vfpsb3.jpg"
 ]
 
 glist << [
 "San Francisco Metal group Group",
 "Meet others in your local area who enjoy Metal Music. Make new friends!",
 get_topics('music', topics),
-"v1493836983/sf_metal_bjamp8.jpg"
+"groups/sf_metal_bjamp8.jpg"
 ]
 
 glist << [
@@ -282,7 +282,7 @@ go out at wine bars in the city when there aren't any new shows in town.
 If you know of upcoming events, let us know. We're very open to
 member submitted events.",
 get_topics('music', topics),
-"v1493837302/sf_classical_u7sei7.jpg"
+"groups/sf_classical_u7sei7.jpg"
 ]
 
 glist << [
@@ -296,7 +296,7 @@ new people, then come join us!
 
 All running paces are welcome!",
 get_topics('sports', topics),
-"v1493958750/sf_fun_run_m2przg.jpg"
+"groups/sf_fun_run_m2przg.jpg"
 ]
 
 glist << [
@@ -305,7 +305,7 @@ glist << [
 field at Raymond Kimball. Mondays and Wednesdays for now. May add
 Fridays later.",
 get_topics('sports', topics),
-"v1493958788/sf_soccer_lv4cgs.jpg"
+"groups/sf_soccer_lv4cgs.jpg"
 ]
 
 glist << [
@@ -321,7 +321,7 @@ confident, radiant women unleashing our inner awesomeness into the
 world. All women, regardless of age, background, or anything else,
 are welcome.",
 get_topics('sports', topics),
-"v1493958825/boarders_fhwo80.png"
+"groups/boarders_fhwo80.png"
 ]
 
 glist << [
@@ -332,7 +332,7 @@ then, check out our calendar of upcoming events and RSVP! We will be
 providing many social opportunities as well as events, day trips,
 cabins, etc... We are a fun and friendly group. Join us! :)",
 get_topics('outdoors', topics),
-"v1494284007/sf_ski_board_rgtjrl.jpg"
+"groups/sf_ski_board_rgtjrl.jpg"
 ]
 
 glist << [
@@ -341,7 +341,7 @@ glist << [
 
 Are you an outdoor enthusiasts looking to Hike? Are you in San Francisco Bay Area? Or even in San Jose/Santa Cruz? Come be social. New in Town? Looking to Meet New People or Friendships? 20's or 30's Something? Here is a group designed for people with similar interests who enjoys Hiking, Climbing, Backpacking, Mountaineering, Skiing and Outdoor Adventures. However, we do include occasional social events such as Wine tasting, Beer tasting, Sporting, Concerts, Happy Hours, Salsa and whatever else that attracts interest. Or even anything that Sounds Fun in the open Fresh Air, far from Urban Civilization to be in good Company around Campfires.",
 get_topics('outdoors', topics),
-"v1494284847/sf_hiking_mxaia6.jpg"
+"groups/sf_hiking_mxaia6.jpg"
 ]
 
 glist << [
@@ -350,14 +350,14 @@ glist << [
 
 We do not charge for groups (unless there are costs like tickets, etc) but if you use the group and attend events, please consider donating a few dollars using the 'Chip In' button on the left side of the page. This goes towards the roughly $150 per year that group charges to maintain the page. This is not required but greatly appreciated!",
 get_topics('outdoors', topics),
-"v1494285194/sf_scuba_zd49kw.jpg"
+"groups/sf_scuba_zd49kw.jpg"
 ]
 
 glist << [
 "Get Your Climb On",
 "Get Your Climb On (or GYCO) is a group that brings together rock climbing & outdoor enthusiasts of all experience levels through groups throughout California at destination-outdoor climbing venues, indoor rock climbing gyms, and social gatherings such as happy hours, BBQs & more. The main goal is to create an inclusive, diverse, fun, safe, friendly, collaborative, community from the ground up--A community that encourages one another to learn outdoor leadership skills, to enjoy the sense of community, teamwork, and a community that plans safe & fun climbing meet ups throughout California & beyond!",
 get_topics('outdoors', topics),
-"v1494285691/sf_climbing_d9jqis.jpg"
+"groups/sf_climbing_d9jqis.jpg"
 ]
 
 glist << [

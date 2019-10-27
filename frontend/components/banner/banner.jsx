@@ -104,7 +104,7 @@ class Banner extends React.Component {
         let topic = topics.find(item => (item.dashTopic === dashTopic));
         return this.topicBanner(topic);
       } else {
-        let bannerUrl = 'v1490140132/banner1_croped_darkened_gavqfh.jpg';
+        let bannerUrl = 'topics/banners/banner1_croped_darkened_gavqfh.jpg';
         return this.splashBanner(bannerUrl);
       }
     }

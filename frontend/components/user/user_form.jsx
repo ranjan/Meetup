@@ -46,7 +46,7 @@ class UserForm extends React.Component {
       if (user.logIn) {
         this.props.login(user).then(goToLanding);
       } else {
-        user.image_url = "v1490361262/m10_ax7t8o.jpg";
+        user.image_url = "profiles/default.jpg";
         this.props.signup(user).then(goToLanding);
       }
     };

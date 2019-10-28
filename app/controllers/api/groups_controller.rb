@@ -3,10 +3,10 @@
 
 class Api::GroupsController < ApplicationController
   def index
-    query = "LOWER(hometown) = :loc AND (LOWER(name) LIKE :val)"
+    query = "LOWER(hometown) LIKE :loc AND (LOWER(name) LIKE :val)"
     options_hash = {
       val: "%" + params[:query].downcase + "%",
-      loc: params[:location].downcase
+      loc: "%" + params[:location].downcase + "%"
     }
     groups = Group
     if params[:topic] != ""

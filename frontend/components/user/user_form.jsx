@@ -7,6 +7,8 @@ class UserForm extends React.Component {
     this.state = {
       username: '',
       password: '',
+      first_name: '',
+      last_name: '',
       logIn: props.logIn
     };
   }

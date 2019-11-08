@@ -78,7 +78,7 @@ class UserForm extends React.Component {
   render(){
     let { username, password } = this.state;
     let { logIn } = this.state;
-    let buttonTxt, guestLink, otherLink;
+    let buttonTxt, guestLink, otherLink, signup_form ;
     if (logIn) {
       buttonTxt = 'Log In';
       guestLink = (
@@ -94,6 +94,18 @@ class UserForm extends React.Component {
       );
     } else {
       buttonTxt = 'Sign Up';
+      signup_form = (
+        <section>
+          <label htmlFor='first_name'>First Name</label>
+            <input type='text' name='first_name' id='first_name'
+            onChange={this.update('first_name')} >
+            </input>
+          <label htmlFor='last_name'>Last Name</label>
+          <input type='text' name='last_name' id='last_name'
+            onChange={this.update('last_name')} >
+          </input>
+        </section>
+      );
       otherLink = (
         <Link onClick={() => this.setState({logIn: true})}>
         Log In
@@ -112,10 +124,12 @@ class UserForm extends React.Component {
       <form className={formstyle}>
         {heading}
         {errors}
+        
         <label htmlFor='username'>Username</label>
           <input type='text' name='username' id='username'
             value={username}
             onChange={this.update('username')} ></input>
+          {signup_form}
           <label htmlFor='password'>Password</label>
           <input type='password' name='password' id='password'
             value={password}

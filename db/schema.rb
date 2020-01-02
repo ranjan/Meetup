@@ -80,15 +80,16 @@ ActiveRecord::Schema.define(version: 20191028134518) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "username",        null: false
-    t.string   "password_digest", null: false
-    t.string   "session_token",   null: false
-    t.string   "image_url",       null: false
+    t.string   "username",                        null: false
+    t.string   "password_digest",                 null: false
+    t.string   "session_token",                   null: false
+    t.string   "image_url",                       null: false
     t.string   "location"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.string   "first_name"
     t.string   "last_name"
+    t.boolean  "admin",           default: false
     t.index ["username"], name: "index_users_on_username", unique: true, using: :btree
   end
 

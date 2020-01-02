@@ -1,4 +1,4 @@
-json.extract! user, :id, :username, :first_name, :last_name, :created_at
+json.extract! user, :id, :username, :first_name, :last_name, :admin, :created_at
 json.imageUrl user.image_url
 
 json.groups user.memberships do |membership|

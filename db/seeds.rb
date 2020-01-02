@@ -28,37 +28,39 @@ girl = [
 ]
 
 ulist = [
-  [ 'Justin', boy[0] ],
-  [ 'Daniel', boy[1] ],
-  [ 'Albert', boy[2] ],
-  [ 'Andrew', boy[3] ],
-  [ 'Jessie', boy[4] ],
-  [ 'Matthew', boy[5] ],
-  [ 'Gilbert', boy[6] ],
-  [ 'Joseph', boy[7] ],
-  [ 'Jeffrey', boy[8] ],
-  [ 'Robert', boy[9] ],
+  [ 'Justin',  'Bieber',   boy[0] ],
+  [ 'Daniel',  'Caesar',   boy[1] ],
+  [ 'Albert',  'Einstein', boy[2] ],
+  [ 'Andrew',  'Scott',    boy[3] ],
+  [ 'Jessie',  'Reyez',    boy[4] ],
+  [ 'Matthew', 'Lewis',    boy[5] ],
+  [ 'Gilbert', 'Baker',    boy[6] ],
+  [ 'Joseph',  'Morgan',   boy[7] ],
+  [ 'Jeffrey', 'Daniel',   boy[8] ],
+  [ 'Robert',  'Reich',    boy[9] ],
 
-  [ 'Samantha', girl[0] ],
-  [ 'Katherine', girl[1] ],
-  [ 'Autumn', girl[2] ],
-  [ 'Jessica', girl[3] ],
-  [ 'Alexis', girl[4] ],
-  [ 'Claire', girl[5] ],
-  [ 'Allison', girl[6] ],
-  [ 'Sophia', girl[7] ],
-  [ 'Fariba', girl[8] ],
-  [ 'Amanda', girl[9] ],
-
-  [ 'Guesty', boy[0] ]
+  [ 'Samantha', 'Fox',     girl[0] ],
+  [ 'Katherine','Jenkins', girl[1] ],
+  [ 'Autumn',   'Miller',  girl[2] ],
+  [ 'Jessica',  'Jones',   girl[3] ],
+  [ 'Alexis',   'Smith',   girl[4] ],
+  [ 'Claire',   'Johnson', girl[5] ],
+  [ 'Allison',  'Brown',   girl[6] ],
+  [ 'Sophia',   'Williams',girl[7] ],
+  [ 'Fariba',   'Hayes',   girl[8] ],
+  [ 'Amanda',   'Cox',     girl[9] ],
+  [ 'Meetup',   'Meetup',  boy[0] ]
 ]
 users = []
+
 ulist.each do |arr|
   user_hash = {
     username: arr[0],
+    first_name: arr[0],
+    last_name: arr[1],
     password: arr[0],
-    image_url: arr[1],
-    location: 'San Francisco, CA',
+    image_url: arr[2],
+    location: ['San Francisco, CA', 'Texas, TX'].sample,
     created_at: DateTime.now - Random.new.rand(366..730)
   }
   users << User.create!(user_hash)

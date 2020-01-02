@@ -82,7 +82,7 @@ class UserForm extends React.Component {
     if (logIn) {
       buttonTxt = 'Log In';
       guestLink = (
-        <Link onClick={() => this.guestLogin("Guesty")}
+        <Link onClick={() => this.guestLogin("Meetup")}
           className='button guestlogin'>
           Guest Login
         </Link>

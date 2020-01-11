@@ -29,3 +29,4 @@ pics_unused/
 # Ignore application configuration
 /config/application.yml
 config/database.yml
+public/assets
